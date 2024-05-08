@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/d8f55a29ad.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/wavesurfer.js"></script>
+	<link rel="stylesheet" href="static/css/style.css">
+	<title>TEST</title>
+</head>
+<body>
+
+	<div id="sidebar">
+		<div class="sidebar-buttons">
+			<form action="{{ url_for('main') }}" method="get">
+				<button class="sidebar-button-GeneralPage">
+			</form>
+			<img class="butt" width="24" height="24" src="https://img.icons8.com/material-two-tone/24/home-page.png" alt="home-page"/>
+			<i class="fa-solid">Головна сторінка</i>
+			<form action="{{ url_for('Posts') }}" method="get">
+  				<button class="sidebar-button-2">
+			</form>
+			<img class="butt" width="25" height="25" src="https://img.icons8.com/ios-filled/50/activity-history.png" alt="activity-history"/>
+			<i class="fa-solid">Написати історію</i>
+		</div>
+	</div>
+
+
+	<div id="content">
+		<h1>Головна сторінка</h1>
+		<h3>Простий сайт з вискористанням Flask і flask_sqlalchemy</h3>
+	</div>
+</body>
+</html>

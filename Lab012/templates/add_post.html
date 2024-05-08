@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Add Post</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Post</h1>
+        <form method="post">
+            <label for="title">Title:</label><br>
+            <input class="text" type="text" name="title"><br>
+            <label for="content">Content:</label><br>
+            <input class="text" name="content"></input><br>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="{{ url_for('Posts') }}" method="get" class="back">
+            <button class="sidebar-button-2">
+            <i>Вернутися назад</i>
+        </form>
+    </div>
+</body>
+</html>
